@@ -1,0 +1,7 @@
+body {
+  background-image: url("/media/images/laptop_background.jpg");
+  background-size: cover;
+  background-color: #000;
+  background-attachment: fixed;
+  background-position: center center;
+}
