@@ -1,3 +1,8 @@
+@font-face {
+  font-family: valorant;
+  src: url("/fonts/val_font.ttf");
+}
+
 html {
   background-image: url("/media/images/laptop_background.jpg");
   background-size: cover;
