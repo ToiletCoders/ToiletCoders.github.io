@@ -9,3 +9,10 @@ html {
 body {
   background-color: #000;
 }
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  font-family: valorant;
+  color: #fff;
+}
