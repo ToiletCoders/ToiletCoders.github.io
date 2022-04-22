@@ -8,11 +8,7 @@
 }
 
 html {
-  background-image: url("/media/images/laptop_background.jpg");
   background-color: #000;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
 }
 
 body {
@@ -26,7 +22,7 @@ body {
 
 @keyframes load-in {
   from {
-    opacity: 10%;
+    opacity: 0%;
   }
   to {
     opacity: 100%;
@@ -75,11 +71,32 @@ h1 {
 
 div {
   color: #fff;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
   text-align: center;
   font-size: 30px;
   font-family: valorant;
-  animation: load-in 2s ease-in-out 0s 1 forwards;
+  opacity: 0%;
+  animation: load-in 2s ease-in-out 1s 1 forwards;
+  display: flex;
+  justify-content: center;
+}
+
+strong {
+  text-shadow: 0 0 0px #fff, 0 0 15px #fff;
+  animation: flickering 3s linear 4s infinite alternate;
+}
+
+#discord {
+  margin-top: 5px;
+  width: 50px;
+  transition: width 0.5s, margin-top 0.5s;
+}
+
+#discord:hover {
+  margin-top: 15px;
+  width: 75px;
 }
