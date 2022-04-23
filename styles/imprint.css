@@ -1,0 +1,89 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background-color: #000;
+}
+
+.topnav {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  overflow: hidden;
+  opacity: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: valorant;
+  transition: background-color 0.25s;
+}
+
+.topnav a.active {
+  background-color: rgb(30, 30, 30);
+}
+
+.topnav a:hover {
+  background-color: rgb(45, 45, 45);
+  animation: flickering 3s linear 1s infinite alternate;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@font-face {
+  font-family: valorant;
+  src: url("/fonts/val_font.ttf");
+}
+
+@keyframes flickering {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+@keyframes load-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

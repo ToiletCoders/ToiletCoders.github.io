@@ -20,6 +20,11 @@ body {
   src: url("/fonts/val_font.ttf");
 }
 
+.load-in {
+  opacity: 0%;
+  animation: load-in 2s ease-in-out 1s 1 forwards;
+}
+
 @keyframes load-in {
   from {
     opacity: 0%;
@@ -128,4 +133,45 @@ strong {
 #bmac-button:hover {
   margin-top: -5px;
   width: 75px;
+}
+
+.topnav {
+  background-color: rgb(20, 20, 20);
+  overflow: hidden;
+  opacity: 0%;
+  animation: load-in 2s ease-in-out 1s 1 forwards;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: valorant;
+  transition: background-color 0.25s;
+}
+
+.topnav a.active {
+  background-color: rgb(30, 30, 30);
+}
+
+.topnav a:hover {
+  background-color: rgb(45, 45, 45);
+  animation: flickering 3s linear 1s infinite alternate;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
