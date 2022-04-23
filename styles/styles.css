@@ -90,13 +90,15 @@ strong {
   animation: flickering 3s linear 4s infinite alternate;
 }
 
-#discord {
+#button {
   margin-top: 5px;
   width: 50px;
   transition: width 0.5s, margin-top 0.5s;
+  position: relative;
+  bottom: 0;
 }
 
-#discord:hover {
+#button:hover {
   margin-top: 15px;
   width: 75px;
 }
