@@ -90,7 +90,7 @@ strong {
   animation: flickering 3s linear 4s infinite alternate;
 }
 
-#button {
+#dc-button {
   margin-top: 5px;
   width: 50px;
   transition: width 0.5s, margin-top 0.5s;
@@ -98,7 +98,33 @@ strong {
   bottom: 0;
 }
 
-#button:hover {
-  margin-top: 15px;
+#dc-button:hover {
+  margin-top: -5px;
+  width: 75px;
+}
+
+#gh-button {
+  margin-top: -2px;
+  width: 65px;
+  transition: width 0.5s, margin-top 0.5s;
+  position: relative;
+  bottom: 0;
+}
+
+#gh-button:hover {
+  margin-top: -15px;
+  width: 95px;
+}
+
+#bmac-button {
+  margin-top: 5px;
+  width: 50px;
+  transition: width 0.5s, margin-top 0.5s;
+  position: relative;
+  bottom: 0;
+}
+
+#bmac-button:hover {
+  margin-top: -5px;
   width: 75px;
 }
