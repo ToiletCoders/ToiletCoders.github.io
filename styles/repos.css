@@ -13,6 +13,16 @@ html {
 
 body {
   background-color: #000;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+div {
+  text-align: center;
+  color: white;
 }
 
 .topnav {
@@ -85,4 +95,26 @@ body {
   to {
     opacity: 100%;
   }
+}
+
+.link h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: valorant;
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+.link {
+  border: solid 1px white;
+  float: left;
+  width: 32%;
+  padding: 0px 0px 5px 0px;
+  margin: 5px 5px;
+  background-color: rgb(15, 15, 15);
+  transition: background-color 0.25s;
+}
+
+.link:hover {
+  background-color: rgb(30, 30, 30);
 }
