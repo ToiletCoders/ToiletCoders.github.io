@@ -9,16 +9,91 @@
     <title>Contact</title>
   </head>
   <body>
-    <div id="navbar" class="topnav">
+    <div style="z-index: 1000" id="navbar" class="topnav noselect load-in">
       <a href="index.html">HoMe</a>
       <a href="repos.html">Repositories</a>
       <a class="active" href="">ContAct</a>
       <a href="imprint.html">LegAl Notice</a>
     </div>
     <script type="text/javascript" src="scripts/navbar.js"></script>
+    <div class="container"><h1>ContAct</h1></div>
+    <div class="content noselect container load-in" style="display: block">
+      <form onsubmit="sendContact(event)">
+        <label for="name">NAMe</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          style="font-family: valorant"
+          placeholder="Your nAMe..."
+        />
 
-    <div class="content noselect">
-      <!-- content here -->
+        <br />
+
+        <label for="eMAil">E-MAil</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exAMple@eMAil.coM"
+          class="form-control"
+          style="font-family: valorant"
+        />
+
+        <br />
+
+        <label for="message">MessAge</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your MessAge..."
+          style="height: 200px; font-family: valorant"
+        ></textarea>
+
+        <br />
+
+        <input type="submit" value="SubMit" />
+      </form>
+
+      <script>
+        async function sendContact(ev) {
+          ev.preventDefault();
+
+          const senderName = document.getElementById("name").value;
+          const senderEmail = document.getElementById("email").value;
+          const senderMessage = document.getElementById("message").value;
+
+          const webhookBody = {
+            embeds: [
+              {
+                title: "Contact Form Submitted",
+                fields: [
+                  { name: "Name", value: senderName },
+                  { name: "E-Mail", value: senderEmail },
+                  { name: "Message", value: senderMessage },
+                ],
+              },
+            ],
+          };
+
+          const webhookUrl =
+            "https://discord.com/api/webhooks/967564303706259506/f5wcPntH_9UXU3NGtVrsEdp40OCobn7DRRIACUJPvlQ2L3ZVmKjYIks8U6AEWF__LvjG";
+
+          const response = await fetch(webhookUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(webhookBody),
+          });
+
+          if (response.ok) {
+            alert("Message received.");
+          } else {
+            alert("There was an error. Try again later.");
+          }
+        }
+      </script>
     </div>
   </body>
 </html>

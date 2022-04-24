@@ -20,6 +20,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
 div {
   text-align: center;
   color: white;
@@ -95,6 +96,33 @@ div {
   to {
     opacity: 100%;
   }
+}
+
+@keyframes load-h1 {
+  from {
+    text-shadow: none;
+    letter-spacing: normal;
+    opacity: 10%;
+  }
+  to {
+    text-shadow: 0 0 0px #fff, 0 0 25px #fff, 0 0 50px #fff;
+    letter-spacing: 25px;
+    opacity: 100%;
+  }
+}
+
+.load-in {
+  opacity: 0%;
+  animation: load-in 2s ease-in-out 1s 1 forwards;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  font-family: valorant;
+  color: #fff;
+  animation: load-h1 2s ease-in-out 0s 1 forwards,
+    flickering 3s linear 0s infinite alternate;
 }
 
 .link h3 {
