@@ -137,6 +137,8 @@ h1 {
   border: solid 1px white;
   float: left;
   width: 48%;
+  height: 100%;
+  overflow: hidden;
   padding: 0px 0px 5px 0px;
   margin: 3px 3px;
   background-color: rgb(15, 15, 15);
