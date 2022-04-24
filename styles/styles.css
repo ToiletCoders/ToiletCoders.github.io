@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 450%;
   text-align: center;
   font-family: valorant;
   color: #fff;
@@ -145,6 +145,7 @@ strong {
   background-color: rgb(20, 20, 20);
   overflow: hidden;
   opacity: 0%;
+  width: 100%;
   animation: load-in 2s ease-in-out 1s 1 forwards;
 }
 
@@ -175,7 +176,7 @@ strong {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
 }
 
 .sticky + .content {
