@@ -156,6 +156,15 @@ h1 {
   opacity: 100%;
 }
 
+.link > hr {
+  opacity: 0%;
+  transition: opacity 1s;
+}
+
+.link:hover > hr {
+  opacity: 100%;
+}
+
 .link > div:nth-of-type(1) {
   opacity: 100%;
 }
