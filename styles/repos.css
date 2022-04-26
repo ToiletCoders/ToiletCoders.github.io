@@ -113,7 +113,7 @@ div {
 
 .load-in {
   opacity: 0%;
-  animation: load-in 2s ease-in-out 1s 1 forwards;
+  animation: load-in 1s ease-in-out 0.5s 1 forwards;
 }
 
 h1 {
@@ -121,7 +121,7 @@ h1 {
   text-align: center;
   font-family: valorant;
   color: #fff;
-  animation: load-h1 2s ease-in-out 0s 1 forwards,
+  animation: load-h1 1s ease-in-out 0s 1 forwards,
     flickering 3s linear 0s infinite alternate;
 }
 
