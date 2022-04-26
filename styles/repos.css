@@ -171,7 +171,7 @@ h1 {
 
 .link:hover {
   background-color: rgb(40, 40, 40);
-  height: 250px;
+  height: 225px;
   animation: border-ani 2s linear 0s infinite forwards;
 }
 
@@ -191,4 +191,9 @@ h1 {
   100% {
     border-image-source: linear-gradient(360deg, #000, #fff);
   }
+}
+
+.link pre {
+  margin-top: -15px;
+  font-size: 15px;
 }
