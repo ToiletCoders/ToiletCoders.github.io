@@ -21,10 +21,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-@font-face {
+/*@font-face {
   font-family: valorant;
   src: url("/fonts/val_font.ttf");
-}
+}*/
 
 .load-in {
   opacity: 0%;
